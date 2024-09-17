@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Zuria - Streetwear Sophistication">
+    <title>Zuria - Streetwear</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 300;
+        }
+        .hero {
+            height: 80vh;
+            background: url('https://via.placeholder.com/1500x800') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            text-align: center;
+            flex-direction: column;
+        }
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 600;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 40px 80px;
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .product img {
+            width: 100%;
+            height: auto;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+        .product-info h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .product-info p {
+            font-size: 16px;
+            color: #666;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 20px;
+        }
+        footer ul li {
+            margin: 0 10px;
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Zuria - Streetwear
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h1>Bienvenido a Zuria</h1>
+        <p>La nueva era del streetwear sofisticado</p>
+    </section>
+
+    <section class="products" id="products">
+        <div class="product">
+            <img src="https://via.placeholder.com/400x400" alt="Producto 1">
+            <div class="product-info">
+                <h3>Producto 1</h3>
+                <p>Descripción corta del producto.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/400x400" alt="Producto 2">
+            <div class="product-info">
+                <h3>Producto 2</h3>
+                <p>Descripción corta del producto.</p>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/400x400" alt="Producto 3">
+            <div class="product-info">
+                <h3>Producto 3</h3>
+                <p>Descripción corta del producto.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-form">
+            <h2>Contacto</h2>
+            <form>
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea rows="5" placeholder="Mensaje" required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Zuria - Todos los derechos reservados.</p>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
